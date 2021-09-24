@@ -61,9 +61,9 @@ export class WebdataService {
         maxDimension = currDimension;
       largestImage = metaData(images[i]).attr('src');
     }
-
     return largestImage;
   }
+  
   // set the result into cache for 2 minutes using url as key set
   async setCacheData(url: string, data: any): Promise<void> {
     await this.cacheStore.set(url, JSON.stringify(data), { ttl: 120 });
