@@ -24,7 +24,7 @@ $ npm run start:prod
 ## Running the app using docker
 
 ```bash
-$ docker build <image_name> .
+$ docker build -t <image_name> .
 
 $ docker run <image_name>
 ```
